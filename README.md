@@ -7,7 +7,7 @@ datasets.
 
 * <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">Electric power consumption</a> [20Mb]
 
-There four scripts for four plots.
+There is four scripts for four plots.
 Each script try download and process the data.
 
 In particular, Data & Time combined to DataTime column. Dataset was subsetted (only data from 2007-02-01 to 2007-02-02 was used).
