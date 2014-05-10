@@ -46,6 +46,6 @@ png(filename='plot2.png', width=480, height=480, bg='transparent', type='cairo')
 plot(df.tidy$DateTime, df.tidy$Global_active_power, type = "l",  xlab='', ylab='Global Active Power (kilowatts)')
 dev.off()
 
-# locale was resored
+# locale must be restored
 Sys.setlocale("LC_TIME", tmp)
 
