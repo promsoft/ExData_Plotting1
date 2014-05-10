@@ -10,7 +10,7 @@ datasets.
 There is four scripts for four plots.
 Each script can download and process the data.
 
-In particular, Data & Time combined to DataTime column. Dataset was subsetted (only data from 2007-02-01 to 2007-02-02 was used).
+Data & Time was combined to DataTime column. Dataset was subsetted (only data from 2007-02-01 to 2007-02-02 was used).
 
 Processed data will be saved to "data/df.tidy.Rda" file.
 
