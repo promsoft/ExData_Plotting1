@@ -48,4 +48,3 @@ dev.off()
 
 # locale must be restored
 Sys.setlocale("LC_TIME", tmp)
-
