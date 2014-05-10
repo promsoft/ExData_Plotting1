@@ -13,12 +13,10 @@ if(!file.exists(fn.tidy)) {
   
   fn.data <- 'household_power_consumption.txt'
   data <- read.table(unz(fn, fn.data), header = TRUE, sep = ";", stringsAsFactors=F)
-  w <- mapply(function(x,y) paste(x, y) , data$Date, data$Time)
-  data$DateTime <- strptime(w, '%d/%m/%Y %H:%M:%S')
+  data$DateTime <- strptime(paste(data$Date, data$Time), '%d/%m/%Y %H:%M:%S')
   data$Date <- as.Date(data$Date, '%d/%m/%Y')
   df.tidy <- subset(data, data$Date >= date.from & data$Date <= date.to)
   rm(data)
-  rm(w)
   df.tidy$Global_reactive_power <- as.numeric(df.tidy$Global_reactive_power)
   df.tidy$Global_active_power <- as.numeric(df.tidy$Global_active_power)
   df.tidy$Voltage <- as.numeric(df.tidy$Voltage)
